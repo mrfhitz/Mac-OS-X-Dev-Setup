@@ -28,3 +28,5 @@ alias f='open -a Finder ./'		# f: 		Opens current directory in MacOS Finder
 alias c='clear'								# c: 		Clear terminal display
 alias please="sudo"						# please:	jukes on you!
 alias ttop="top -R -F -s 10 -o rsize"
+# Javascript compiler
+alias js="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc"

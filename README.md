@@ -1,5 +1,5 @@
 ## Mac OS X Dev Setup
-This document describes how I set up my developer environment on a new MacBook or iMac. We will set up [Node](http://nodejs.org/) (JavaScript) and [Vagrant](https://www.vagrantup.com) environments, mainly for JavaScript and web related development. As you read and follow these steps, feel free to send me any feedback or comments you may have.
+This document describes how I set up my developer environment on a new MacBook or iMac. We will set up some developer tools and [Vagrant](https://www.vagrantup.com). Vagrant will be used as the core of our environment to set up the web servers. As you read and follow these steps, feel free to send me any feedback or comments you may have.
 
 The document assumes you are new to Mac. The steps below were tested on **OS X Yosemite**.
 
@@ -22,7 +22,7 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 - [Apps](#apps)
 
 ## System update
-First thing you need to do, on any OS actually, is update the system! For that: Apple Icon > Software Update...
+First thing you need to do, on any OS actually, is update the system! For that: Apple Icon > Software Update... Well done, you work like a pro!
 
 ## System preferences
 If this is a new computer, there are a couple tweaks I like to make to the System Preferences. Feel free to follow these, or to ignore them, depending on your personal preferences.
@@ -41,8 +41,6 @@ In Apple Icon > System Preferences:
 My main browser its Safary but some times its usefull to have another one like Chrome.
 
 Donwload Chrome from [www.google.com/chrome](www.google.com/chrome). Open the .dmg file once it's done downloading (this will mount the disk image), and drag and drop the Google Chrome app into the Applications folder (on the Mac, most applications are installed this way). When done, you can unmount the disk in Finder (the small "eject" icon next to the disk under Devices).
-
-Install AddBlock plus in bouth browsers.
 
 ## Homebrew
 
@@ -122,7 +120,7 @@ If you don't have Office, follow these steps:
 And click **Install Font**. Thanks to Alexander Zhuravlev for his [post](http://blog.ikato.com/post/15675823000/how-to-install-consolas-font-on-mac-os-x).
 
 ## Beautiful terminal
-Since we spend so much time in the terminal, we should try to make it a more pleasant and colorful place. What follows might seem like a lot of work, but trust me, it'll make the development experience so much better.
+Since we are gonna spend so much time in the terminal, we should try to make it a more pleasant and colorful place. What follows might seem like a lot of work, but trust me, it'll make the development experience so much better.
 
 Let's go ahead and start by adding some color. I'm a big fan of the [Solarized](http://ethanschoonover.com/solarized) color scheme. It is supposed to be scientifically optimal for the eyes. I just find it pretty.
 
@@ -242,6 +240,7 @@ Now you are ready to use the vagrant commands, they have a lot of commands that 
 * Turn off virtual env: ``$ vagrant halt``
 
 **Note:** If you are using my config I made the vagrant to use the port [:8888](localhost:8888) as your apache server.
+**ERROR:** If you get the error: ```Valid states are 'starting, running'. The machine is in the 'poweroff' state.``` you need to change the version of Virtualbox you have instaled. I have tested VirtualBox 4.3 and it work fine.
 
 ## Node.js
 
